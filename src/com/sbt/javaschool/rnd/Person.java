@@ -1,10 +1,12 @@
 package com.sbt.javaschool.rnd;
 
 import java.util.Comparator;
+import java.lang.*;
 
-public class Person implements  Comparable<Person>{
+public class Person implements Comparable<Person>{
     String name;
     long age;
+
 
     public static Comparator<Person> byNameComparator=new Comparator<Person>() {
         @Override
@@ -12,6 +14,7 @@ public class Person implements  Comparable<Person>{
             return o1.getName().compareTo(o2.getName());
         }
     };
+
     public Person(String name, long age) {
         this.name = name;
         this.age = age;
@@ -51,10 +54,12 @@ public class Person implements  Comparable<Person>{
                 '}';
     }
 
+
     @Override
     public int compareTo(Person o) {
-        int result=0;
-     //  result = age.compareTo(o.getAge());
+        int result=1;
+     // result = name.compareTo(o.getName());
         return  result;
     }
+
 }
