@@ -44,17 +44,20 @@ List<Integer> list3=new ArrayList<>();
         list5.add(new Integer(5));
         list5.add(new Float(1.1f));
         list5.add(new Double(2.2f));
+        list5=list2;
 list5.get(0);
         List<? extends Integer> list6;
         list6=list3;
        // list6.add(new Integer(1));
         list6.get(0);
-      copyList(list2,list);
+    //  copyList(list2,list);
 
-       //copyList(list2,list3);
+
+
+   copyList(list2,list3);
 
       //  Collections.copy(list2,list3);
-        for (Number num:list) {
+        for (Number num:list2) {
             System.out.println(num);
         }
 
