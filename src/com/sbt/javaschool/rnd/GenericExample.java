@@ -44,9 +44,11 @@ List<Integer> list3=new ArrayList<>();
         list5.add(new Integer(5));
         list5.add(new Float(1.1f));
         list5.add(new Double(2.2f));
-
-        List<? super Number> list6;
-        list6=list5;
+list5.get(0);
+        List<? extends Integer> list6;
+        list6=list3;
+       // list6.add(new Integer(1));
+        list6.get(0);
       copyList(list2,list);
 
        //copyList(list2,list3);
