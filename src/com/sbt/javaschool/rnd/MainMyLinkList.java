@@ -9,7 +9,10 @@ public class MainMyLinkList {
 
 MyLinkedList<Person> link_list =  new MyLinkedList<Person>();
 link_list.add(new Person("Dima",35));
+link_list.add(new Person("Sasha",29));
+link_list.add(new Person("Masha",18));
 
+System.out.println(link_list.get(0));
 
     }
 
