@@ -8,7 +8,7 @@ import java.util.List;
 public class GenericExamle {
     public static void main(String[] args) {
 
-//contrvariantnost and covariantn
+        //contrvariantnost and covariantn
         //PECS Producer extends Consumer super
         //Generic podstavlyautsa na etape compelazii
         //Esli peremennie nugno i chitat i pisat to luchshe ne ispolzovat masku
@@ -29,7 +29,7 @@ public class GenericExamle {
         List<? super Number> list5 = new ArrayList<>();
     }
 
-    public static void copyList(List<>)
+   // public static void copyList(List<>)
 
 
 }
