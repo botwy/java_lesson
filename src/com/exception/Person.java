@@ -3,10 +3,10 @@ package com.exception;
 import java.io.IOException;
 
 public class Person {
-    String name;
-    Integer age;
-    Gender gender;
-    Person spouse;
+  private String name;
+    private Integer age;
+    private Gender gender;
+    private Person spouse;
 
     public Person(String name, Integer age, Gender gender) {
         this.name = name;

@@ -15,6 +15,7 @@ public class PersonUtils {
     public static void merry(Person person1, Person person2) throws Exception {
         try {
             person1.marry(person2);
+            person1.
         } catch (IOException e) {
            throw new Exception("",e);
         }
