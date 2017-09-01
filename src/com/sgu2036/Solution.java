@@ -1,4 +1,4 @@
-package com.com.sgu2036;
+package com.sgu2036;
 
 import java.util.ArrayList;
 import java.util.Scanner;
