@@ -1,4 +1,6 @@
 package com.reflection;
 
-public class StringList {
+import java.util.ArrayList;
+
+public class StringList extends ArrayList<String>{
 }
