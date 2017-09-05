@@ -12,12 +12,12 @@ public class PersonUtils {
 
     public static final Person DIMA = new Person("Dima", 32, Gender.MALE);
 
-    public static void merry(Person person1, Person person2) throws Exception {
+    public static void merry(Person person1, Person person2) {
         try {
             person1.marry(person2);
-            person1.
         } catch (IOException e) {
-           throw new Exception("",e);
+           throw new RuntimeException("IO Exception",e);
+           // e.printStackTrace();
         }
      // catch (Exception e) {
        //     e.printStackTrace();
