@@ -1,6 +1,7 @@
 package com.class_loader;
 
 import com.sbt.javaschool.rnd.Person;
+
 import sun.misc.Launcher;
 
 import java.lang.reflect.Array;
@@ -12,6 +13,11 @@ public class MainClassLoader {
 
     public static void main (String[] args) {
         //Map указываем что наш класс лоудер загружает класс без обращения к родителям
+      /*  try {
+            Class.forName("Person2");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }*/
         Person person = new Person("Bob", 35);
         Launcher launcher = new Launcher();
         //Алексей Пандин
