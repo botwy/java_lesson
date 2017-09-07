@@ -12,7 +12,7 @@ public class MainReflection {
     public  static void main (String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, NoSuchFieldException {
         IClient cl = new Client("GroupA", 1);
         Class clazz = cl.getClass();
-        System.out.println(clazz.getName());
+        //System.out.println(clazz.getName());
         //Class.forName
         //Client.class String tochka class
 
@@ -22,16 +22,16 @@ public class MainReflection {
 
         List<Method> methods_priv = Arrays.asList(clazz.getDeclaredMethods());
 
-        System.out.println(methods_priv);
+     //   System.out.println(methods_priv);
         List<Field> fields = Arrays.asList(clazz.getDeclaredFields());
-        for (Field f:fields
+      /*  for (Field f:fields
              ) {
             System.out.println(f);
-        }
+        }*/
 
         Method method = clazz.getMethod("getGroupName");
        // method.invoke(cl);
-        System.out.println(method.invoke(cl).getClass());
+    //    System.out.println(method.invoke(cl).getClass());
 
         Field field = clazz.getDeclaredField("loyality");
        // field.setAccessible(true);
@@ -42,18 +42,22 @@ public class MainReflection {
         clazz = list.getClass();
     //    ParameterizedType type = (ParameterizedType) clazz.getGenericSuperclass();
 
-        System.out.println(clazz);
+      //  System.out.println(clazz);
 
-        System.out.println((new StringList()).getClass().getSuperclass());
+        //System.out.println((new StringList()).getClass().getSuperclass());
 
         //Fabrica
         List<String> strings = (List<String>)
                 Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(),
                         new Class[]{List.class},new LogHandler(new ArrayList<String>()));
 
-        for (String str:strings
+       /* for (String str:strings
              ) {
             System.out.println(str);
-        }
+        }*/
+
+       strings.add("Bob");
+        strings.add("Mike");
+        strings.remove(0);
     }
 }
